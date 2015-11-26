@@ -1,0 +1,19 @@
+ejercicio1: ejercicio1c
+	mpirun --mca btl_tcp_if_exclude lo,eth0 -np 2 --hostfile machinefile /shared/mpippp
+ejercicio1c:
+	mpicc ejercicio1.c -o /shared/mpippp
+
+ejercicio2: ejercicio2c
+	mpirun --mca btl_tcp_if_exclude lo,eth0 -np 2 --hostfile machinefile /shared/mpippp
+ejercicio2c:
+	mpicc ejercicio2.c -o /shared/mpippp
+
+ejercicio3: ejercicio3c
+	mpirun --mca btl_tcp_if_exclude lo,eth0 -np 2 --hostfile machinefile /shared/mpippp
+ejercicio3c:
+	mpicc ejercicio3.c -o /shared/mpippp
+
+ejercicio4: ejercicio4c
+	mpirun --mca btl_tcp_if_exclude lo,eth0 -np 2 --hostfile machinefile /shared/mpippp
+ejercicio4c:
+	mpicc ejercicio4.c -o /shared/mpippp
